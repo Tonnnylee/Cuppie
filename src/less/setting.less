@@ -1,0 +1,33 @@
+.setting{
+	 width:100%;
+	 min-height:100%;
+	 position:absolute;
+	 top:0;
+	 left:0;
+	 z-index:110;
+	 background:#ececec;
+	 .setting-wrap{
+	 	background:#fff;
+	 	margin-top:80px;
+	 	.setting-list{
+	 		height:70px;
+	 		padding:25px 15px;
+	 		box-sizing: border-box;
+	 		font-size:1.3rem;
+	 		text-align: left;
+	 	}
+	 	.logout{
+	 		color:#E20738;
+	 	}
+	 }
+}
+
+.fade-enter-active, .fade-leave-active{
+  transition:all .5s ease;
+  transform:translate(0px, 0);
+}
+  
+.fade-enter, .fade-leave-active{
+  opacity: 0;
+  transform:translate(30px, 0);
+}

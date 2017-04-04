@@ -1,0 +1,33 @@
+<App>
+  <loading :show="loadingShow"></loading>
+  <v-header></v-header>
+  <!-- 主页面 -->
+  <router-view>
+  	 <!-- index -->
+  	 <v-home>
+  	 	<v-card></v-card>
+  	 	<v-detail></v-detail>
+  	 </v-home>
+  	 <!-- discovery -->
+  	 <v-discovery>
+  	 	<v-card></v-card>
+  	 	<v-detail></v-detail>
+  	 	<v-menu></v-menu>
+  	 </v-discovery>
+  	 <!-- notice -->
+  	 <v-notice></v-notice>
+  	 <!-- user -->
+  	 <v-user>
+        <header></header>
+        <login></login>
+        <signup></signup>
+        <upload></upload>
+         
+     </v-user>
+  </router-view>
+  <v-nav>
+  	<router-link>Index</router-link>
+  	<router-link>discovery</router-link>
+  	<router-link>notice</router-link>
+  	<router-link>personal</router-link>
+  </v-nav>
