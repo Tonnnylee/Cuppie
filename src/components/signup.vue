@@ -92,9 +92,9 @@
 						setTimeout(function(){
 							vm.$store.commit("UPDATE_TIPS", false);
 						},2000)
-						//vm.$store.commit("UPDATE_CURRENTUSER", loginedUser);
 					}, (function (error) {
 						alert(JSON.stringify(error));
+						vm.$store.commit("UPDATE_LOADING", false);
 					}));
 
 					//添加到用户表

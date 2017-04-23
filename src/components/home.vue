@@ -66,6 +66,7 @@
 					vm.$store.commit('UPDATE_LOADING', false);
 					return false;
 				}
+				//查询开始
 				var query = new AV.Query('Picture');
 				query.include('owner');
 				query.include('image');

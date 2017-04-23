@@ -139,7 +139,7 @@
 					eThis.$store.commit("UPDATE_LOADING", false);
 					eThis.saveSuccess();
 				}, function(error) {
-					console.error(JSON.stringify(error));
+					console.error(JSON.stringify(error)+ " upload error");
 				})
 			},
 			classify(className){
@@ -169,7 +169,7 @@
 						}
 					}
 				}).catch(function(error){
-					alert(JSON.stringify(error));
+					console.error(JSON.stringify(error) + " classify error");
 				});	
 			},
 			createClass(className){
@@ -184,7 +184,7 @@
 					//触发时间戳
 					vm.time = new Date().getTime();
 				}, function(error) {
-					alert(JSON.stringify(error));
+					console.error(JSON.stringify(error) + " createClass error");
 				});	
 				
 			},

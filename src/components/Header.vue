@@ -104,7 +104,9 @@
 							query.find().then(function(results){
 								for(var result of results){
 									var userId = result.get("owner").id;
-									if(userId == AV.User.current().id){
+									var picture = result.get("Picture").id;
+									//找到当前用户的
+									if(userId == AV.User.current().id && picture == vm.pictureId){
 										var resultId = result.id;
 										var currentPic = AV.Object.createWithoutData('likes',resultId);
 										currentPic.destroy().then(function(success){

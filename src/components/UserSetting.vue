@@ -203,6 +203,7 @@
 							} 
 							if(!vm.hasFound){
 								vm.createProfile();
+								break;
 							}	
 						 }	
 						} 
